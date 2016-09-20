@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+# Use to load user photos
+gem "paperclip", "~> 5.0.0"
 # Use to login users so only they can edit their posts
 gem 'devise'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
