@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+# Use to make everything look pretty
+gem 'materialize-sass'
 # Use to search
 gem 'searchkick'
 # Use to load user photos
