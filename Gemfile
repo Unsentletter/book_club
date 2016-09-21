@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+# Use to search
+gem 'searchkick'
 # Use to load user photos
 gem "paperclip", "~> 5.0.0"
 # Use to login users so only they can edit their posts
