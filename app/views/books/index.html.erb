@@ -1,16 +1,11 @@
-<!-- <% if !user_signed_in? %>
-  <div class = jumbotron>
-    <h1>Your favourite books reviewed</h1>
-    <p>
-      <%= link_to "sign up to write a review", new_user_registraton_path(book) %>
-    </p>
-  </div>
-  <% end %> -->
+<% if !user_signed_in? %>
+
+    <h1>Book Club</h1>
+    <p><%= link_to 'Sign up to write a review', new_user_registration_path, class:"waves-effect waves-light btn" %></p>
+<% end %>
 
  <% @books.each do |book| %>
    <%= link_to (image_tag book.image.url(:medium), class: 'image'), book%>
  <% end %>
 
-
-<!-- delete when button above has been styled with materialize -->
-<%= link_to 'New Book', new_book_path %> -->
+<%= link_to 'new', new_book_path %>

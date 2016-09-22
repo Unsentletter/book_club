@@ -65,7 +65,7 @@ class BooksController < ApplicationController
     if params[:search].present?
       @books = Book.search(params[:search])
     else
-      @movies = Movie.all
+      @books = Book.all
     end
   end
 
